@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Students
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let student of students">
+            <h2 (click)="viewStudentDetail(student.id)">{{ student.name }} - {{ student.age }} age</h2>
+        </ion-item>
+    </ion-list>
+</ion-content>
